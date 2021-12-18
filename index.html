@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D car Animation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <section class="sky">
+        <div class="sun"></div>
+        <div class="scenery">
+            <img src="images/police_car.gif" class="car1">
+            <img src="images/police_car.gif" class="car2">
+        </div>
+    </section>
+    <script>
+        const sun=document.querySelector(".sun");
+        const body=document.querySelector("body");
+        sun.onclick=function(){
+            body.classList.toggle('dark')  //here dark is a class name JS
+        }
+    </script>
+</body>
+</html>
